@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">Your Name</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <h1>Hello, I'm [Your Name]</h1>
+            <p>A passionate web developer specializing in building awesome websites.</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="https://via.placeholder.com/150" alt="Your Photo">
+            <p>Hi! I'm [Your Name], a web developer with a passion for creating clean and user-friendly websites. I have experience in HTML, CSS, and JavaScript, and I enjoy building projects that solve real-world problems.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Version Control (Git)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project Title 1</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Project 1">
+            <p>Description of project 1. Explain the tools and technologies you used.</p>
+        </div>
+        <div class="project">
+            <h3>Project Title 2</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Project 2">
+            <p>Description of project 2. Share insights about what you learned.</p>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download>Download My Resume (PDF)</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: yourname@example.com</p>
+        <p>Phone: +123 456 7890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.intro {
+    margin-top: 20px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+/* About Section */
+.about {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.about p {
+    max-width: 600px;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills ul li {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.projects .project {
+    margin-bottom: 40px;
+}
+
+.projects img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Resume Section */
+.resume {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.resume a {
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact p {
+    font-size: 1.2em;
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
